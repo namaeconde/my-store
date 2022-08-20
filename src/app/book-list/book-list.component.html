@@ -1,0 +1,13 @@
+<h1>My Books</h1>
+<div>
+  <table  style="width:100%">
+    <tr>
+      <th>Title</th>
+      <th>Year</th>
+    </tr>
+    <tr *ngFor="let book of books">
+      <td>{{ book.title }}</td>
+      <td>{{ book.year }}</td>
+    </tr>
+  </table>
+</div>
