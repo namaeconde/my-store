@@ -8,6 +8,7 @@ import { ApiService } from "../api.service";
 })
 export class BookListComponent implements OnInit {
   books: Array<any> = [];
+  displayedColumns = ['title', 'year'];
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
